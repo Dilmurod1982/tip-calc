@@ -1,9 +1,29 @@
+/* space-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/space-mono-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/space-mono-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23.7px;
 }
 
 html {
@@ -29,7 +49,10 @@ img {
 body {
   height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  background-color: #C5E4E7;
 }
 
 /* normalize css problem fixed */
@@ -38,14 +61,190 @@ h1 {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px; /* it depends on you project */
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
   margin-left: auto;
   margin-right: auto;
   padding-left: 50px;
   padding-right: 50px;
+  
+}
+.header {
+  color: #3D6666;
+  font-size: 18px;
+  margin-bottom: 88px;
+}
+main {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;  
+  width: 920px;
+  height: 481px;
+  border-radius: 20px;
 }
 
-main {
-  flex-grow: 1;
+
+.main-left {
+  padding-top: 45px;
+  padding-left: 48px;
+  padding-bottom: 48px;
+  padding-right: 44px;
+  width: 379px;
+  margin-right: 48px;
+}
+.main-left-bill {
+  color: #5E7A7D;
+  margin-bottom: 6px;
+}
+.main-left-bill-input {
+  position: relative;
+  margin-bottom: 4px;
+}
+.bill-img {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}
+.input-left {
+  width: 379px;
+  height: 48px;
+  background-color: #F3F9FA;
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+  color: #00474B;
+  font-size: 24px;
+  line-height: 35.54px;
+  margin-right: 24px;
+}
+
+.main-left-select-tip {
+  color: #5E7A7D;
+  margin-bottom: 16px;
+}
+
+.main-left-buttons-top {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.btn {
+  border: none;
+}
+.btn-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 117px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 35.54px;
+  color: #FFFFFF;
+  background-color: #00474B;
+  border-radius: 5px;
+}
+.btn-a:active {
+  background-color: #9FE8DF;
+  color: #00474B;
+}
+.main-left-buttons-bottom {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.input-bottom {
+  width: 118px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 35.54px;
+  background-color: #F3F9FA;
+  border: none;
+  text-align: center;
+  text-align: right;
+}
+.input-bottom:focus {
+  border: 3px solid blue;
+  box-shadow: 1px 1px 2px 0 blue;
+}
+
+.main-left-people-text {
+  color: #5E7A7D;
+  margin-bottom: 6px;
+}
+.main-left-people {
+  position: relative;
+}
+
+.people-img {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}
+.main-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 413px;
+  margin-left: 24px;  
+  margin-top: 32px;
+  width: 413px;
+  height: 417px;
+  background-color: #00474B;
+  border-radius: 15px;
+}
+.main-right-top {
+  width: 413px;
+  display: flex;  
+  align-items: center;
+  padding: 40px 40px 20px 40px
+}
+.main-right-left-title {  
+  width: 333px;
+}
+.left-title-text {
+  color: #FFFFFF;
+}
+.left-title-person {
+  font-size: 13px;
+  line-height: 19.25px;
+  color: #7F9D9F;
+}
+.main-right-top-sum {
+  text-align: center  ;  
+  font-size: 48px;
+  line-height: 71.09px;
+  letter-spacing: -1px;
+  text-align: right;
+  color: #26C2AE;
+}
+.main-right-bottom {
+  width: 413px;
+  display: flex;  
+  align-items: center;
+  padding: 20px 40px 0px 40px;
+  margin-bottom: 122px;
+}
+.main-right-button {
+  border: none;
+  border-radius: 7px;
+}
+.main-right-btn {
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  width: 333px;
+  height: 48px;
+  background-color: #26C2AE;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+  line-height: 29.62px;
+  color: #00474B;
+}
+
+.main-right-btn:active {
+  background-color: #9FE8DF;
+  color: #00474B;
 }

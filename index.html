@@ -3,22 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <title>Tip calculator</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
   </head>
   <body>
+    <div class="container">
     <!-- HEADER START -->
-    <header class="header"></header>
+    <header class="header">S P L I <br> T T E R</header>
     <!-- HEADER END -->
 
     <!-- MAIN START -->
-    <main class="main"></main>
+    <main class="main">
+      <div class="main-left">
+        <p class="main-left-bill">Bill</p>
+        <div class="main-left-bill-input">
+          <img class="bill-img" src="./images/$.svg" alt="">
+          <input class="input-left" type="number">
+        </div>        
+        <p class="main-left-select-tip">Select tip %</p>
+        <div class="main-left-buttons">
+          <div class="main-left-buttons-top">
+            <button class="btn">
+              <a class="btn-a" href="#">5%</a>
+            </button>
+            <button class="btn">
+              <a class="btn-a" href="#">10%</a>
+            </button>
+            <button class="btn">
+              <a class="btn-a" href="#">15%</a>
+            </button>
+          </div>
+          <div class="main-left-buttons-bottom">
+            <button class="btn">
+              <a class="btn-a" href="#">25%</a>
+            </button>
+            <button class="btn">
+              <a class="btn-a" href="#">50%</a>
+            </button>
+            <input class="input-bottom" placeholder="Custom" type="number">
+          </div>
+          <p class="main-left-people-text">Number of People</p>
+          <div class="main-left-people">
+            <img class="people-img" src="./images/Combined Shape.svg" alt="">
+            <input class="input-left" type="number">
+          </div>          
+        </div>   
+      </div>
+      <div class="main-right">
+          <div class="main-right-top">
+            <div class="main-right-left-title">
+              <p class="left-title-text">Tip Amount</p>
+              <h5 class="left-title-person">/ person</h5>
+            </div>
+            <p class="main-right-top-sum">$4.27</p>
+          </div>   
+          <div class="main-right-bottom">
+            <div class="main-right-left-title">
+              <p class="left-title-text">Total</p>
+              <h5 class="left-title-person">/ person</h5>
+            </div>
+            <p class="main-right-top-sum">$32.79</p>
+          </div>
+          <button class="main-right-button">
+            <a class="main-right-btn" href="#">RESET</a>
+          </button>   
+      </div>
+
+    </main>
     <!-- MAIN END -->
 
     <!-- FOOTER START -->
     <footer class="footer"></footer>
     <!-- FOOTER END -->
+  </div>
   </body>
 </html>
